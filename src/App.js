@@ -18,7 +18,6 @@ function App(props) {
     props.dispatch(removeTask(id));
   }
 
-
   return (
     < >
       <TasksPage tasks={props.tasks} 
