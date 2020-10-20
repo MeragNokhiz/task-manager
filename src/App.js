@@ -2,7 +2,7 @@ import React from 'react';
 import "bootstrap/dist/css/bootstrap.min.css" 
 import TasksPage from './components/TasksPage';
 import {connect} from 'react-redux'
-import {editTask, createTask} from './actions'
+import {editTask, createTask, removeTask} from './actions'
 
 function App(props) {
 
@@ -14,11 +14,17 @@ function App(props) {
     props.dispatch(createTask({ title, description }));
   }
 
+  const onRemoveTask = (id) => {
+    props.dispatch(removeTask(id));
+  }
+
+
   return (
     < >
       <TasksPage tasks={props.tasks} 
       onStatusChange={onStatusChange}
-      onCreateTask={onCreateTask}/>
+      onCreateTask={onCreateTask}
+      onRemoveTask={onRemoveTask}/>
     </>
   );
 }
