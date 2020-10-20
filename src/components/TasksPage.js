@@ -64,7 +64,7 @@ const TasksPage = (props) => {
         <div className="form-group">
           <input type="text" className="form-control" placeholder="Task Description" onChange={onChangeDescription}/>
         </div>
-        <div type="submit" className="btn btn-primary">Submit</div>
+        <button type="submit" className="btn btn-primary">Submit</button>
         </form>)}
       </div>
       <div className="row d-flex justify-content-center position-relativ" style={{background: '#e9ecf'}}>

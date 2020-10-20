@@ -2,7 +2,6 @@ import React from 'react'
 
 const TASK_STATUSES= ["Unstarted", "In Progress", "Completed"]
 
-
 const Task = (props) => {
   function onStatusChange(e){
     props.onStatusChange(props.task.id, e.target.value)
@@ -18,9 +17,9 @@ const Task = (props) => {
       </select>
       </form>
       <h2 className="card-title mt-3 text-uppercase px-2" style={{color: '#3a4'}}>{props.task.title}</h2>
-      <p className="card-text mb-3 text-muted font-weight-bold px-2">{props.task.description}</p>   
+      <p className="card-text mb-3 text-muted font-weight-bold px-2" >{props.task.description}</p>   
     </div>
   )
 }
 
-export default Task
+export default Task;

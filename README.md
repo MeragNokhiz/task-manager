@@ -3,9 +3,13 @@
 
 This is a simple Task Manager App with React & Redux.
 
+Install Node.js with: 
+
+#### `npm install`
+
 You can start the Server with:
 
-### `npm start`
+#### `npm start`
 
 Runs the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.

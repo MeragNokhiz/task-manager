@@ -48,7 +48,7 @@ switch(action.type){
     return {
       tasks: state.tasks.map(task => {
         if(task.id === payload.id) {
-          return Object.assign({}, task, payload.params)
+          return Object.assign({}, task, payload.params);
           }
           return task;
         })
@@ -60,7 +60,7 @@ switch(action.type){
     };
   }
   default: 
-  return state;
-}}
+    return state;
+}};
 
 export default tasks;
