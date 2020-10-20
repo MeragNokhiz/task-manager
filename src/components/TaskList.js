@@ -1,11 +1,18 @@
 import React from 'react'
+import Task from './Task'
 
-const TaskList = () => {
+const TaskList = (props) => {
   return (
     <div>
-      <h2>TaskList.js</h2>
+      <div className="card-header text-uppercase text-center font-weight-bold">
+        {props.status}
+      </div>
+      {props.tasks.map( task => (
+      <Task key={task.id} task={task}
+      onStatusChange={props.onStatusChange}/>
+      ))}
     </div>
   )
 }
 
-export default TaskList
+export default TaskList;
