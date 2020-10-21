@@ -2,7 +2,6 @@ import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTrash } from '@fortawesome/free-solid-svg-icons'
 
-
 const TASK_STATUSES= ["Unstarted", "In Progress", "Completed"]
 
 const Task = (props) => {
@@ -28,7 +27,7 @@ const Task = (props) => {
       <FontAwesomeIcon icon={faTrash} 
       className="float-right m-5" 
       style={{color: "tomato", cursor: "pointer"}} 
-      onClick={() => onRemoveTask(props.task.id)}/>  
+      onClick={onRemoveTask}/>  
     </div>
   )
 }

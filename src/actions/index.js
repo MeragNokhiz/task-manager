@@ -1,8 +1,7 @@
-import { EDIT_TASK } from "../actions/types"
-import { CREATE_TASK } from "../actions/types"
-import { REMOVE_TASK } from "../actions/types"
-
-import uuid from 'react-uuid'
+import { EDIT_TASK } from "../actions/types";
+import { CREATE_TASK } from "../actions/types";
+import { REMOVE_TASK } from "../actions/types";
+import uuid from 'react-uuid';
 
 export const editTask = (id, params = { }) => {
   return {
